@@ -54,8 +54,5 @@
       <text>云调用</text>
     </navigator>
   </view>
-    <button bindtap='jumptoindex2'>我是学生</button>
-  <view>
-   <button>我是教师</button>
-  </view>
+    <button bindtap='jumptoindex2'>项目开始</button>
 </view>

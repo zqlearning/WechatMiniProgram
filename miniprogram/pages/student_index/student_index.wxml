@@ -34,16 +34,16 @@
     {{index}}:{{item.cname}}
     <template is="msgItem" data="{{...item}}" />
   </view> -->
-  <view>{{snum}}</view>
   <view wx:for="{{classlist}}">
   {{item.cname}}
   </view>
 </view>
+<view bindtap="jump2myinfo">我的信息</view>
 
 
-<view style='display:{{viewhidden2}};'>
+<!-- <view style='display:{{viewhidden2}};'>
   <view class='content_item' wx:for="{{student_lesson}}" wx:key="key">
     <template is="tmsgItem" data="{{...item}}" />
   </view>
-</view>
+</view> -->
 <text></text>

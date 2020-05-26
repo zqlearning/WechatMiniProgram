@@ -11,6 +11,12 @@ Page({
   mine:function(e){
 
   },
+  //跳转到学生信息页面
+  jump2myinfo:function(e){
+    wx:wx.navigateTo({
+      url: '../student_info/student_info?snum='+this.data.snum,
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
@@ -26,16 +32,11 @@ Page({
       snum:this.data.snum
     }).get({
       success(res){
-        console.log("res",res)
-        console.log(res.data[0])
-        
         that.setData({
           classlist:res.data
         });
-        console.log()
         console.log("snum",that.data.snum)
         console.log("classlist",that.data.classlist)
-        
       }
 
     })

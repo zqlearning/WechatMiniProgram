@@ -5,14 +5,34 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    sname:'',
+    snum:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this;
+    that.setData({
+      snum:options.snum
+    })
 
+    const db = wx.cloud.database();
+    db.collection('s_info').where({
+      snum:this.data.snum
+    }).get({
+      // data 传入需要局部更新的数据
+      // data: {
+      //   // 表示将 done 字段置为 true
+      //   done: true
+      // },
+      success(res) {
+        that.setData({
+          sname:res.data[0].sname
+        })
+      }
+    })  
   },
 
   /**

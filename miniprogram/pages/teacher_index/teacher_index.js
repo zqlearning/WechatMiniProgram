@@ -8,6 +8,12 @@ Page({
     classes:[]
   },
 
+
+  //添加课程
+  addclass:function(e){
+    console.log("add classing")
+    
+  },
   /**
    * 生命周期函数--监听页面加载
    */

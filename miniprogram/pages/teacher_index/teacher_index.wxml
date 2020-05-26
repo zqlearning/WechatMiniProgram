@@ -6,9 +6,26 @@
     {{item.cname}} {{item.ccredit}}
   </view>
 </view>
-<view>
-<form bindsubmit="addclass" bindreset="resetaddclass" title='添加课程'>
-
-
-</form>
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">课程名称</view>
+    <view class="th">学分</view>
+  </view>
+  <block wx:for="{{classes}}">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td">{{item.cname}}</view>
+      <view class="td">{{item.ccredit}}</view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="td">{{item.cname}}</view>
+      <view class="td">{{item.ccredit}}</view>
+    </view>
+  </block>
 </view>
+
+
+<form bindsubmit="addclass" bindreset="formReset" title='添加课程'>
+  <input type="text" placeholder="课程学分" name='class_name' />
+  <input type="text" placeholder="学分" name='class_credit'></input>
+  <button form-type="submit">添加课程按钮</button>
+</form>

@@ -9,7 +9,52 @@ Page({
     spsd:"",
   
   },
-  
+
+  register_reset:function(){
+
+  },
+
+ //注册表单提交
+  register:function(e){
+    let{register_name,register_num,register_psd,register_psd2}=e.detail.value;
+    if(!register_name||!register_num||!register_psd||!register_psd2){
+      wx.showToast({
+        title: '请将信息填写完整',
+        icon:'none'
+      })
+    }else if(register_psd!=register_psd2){
+      wx.showToast({
+        title: '两次密码不一致！请重新输入!',
+        icon: 'none' 
+      })
+    }
+    else{
+      //没有做学号比较
+      const db = wx.cloud.database()
+      db.collection('s_info').add({
+        data:{
+          sname:register_name,
+          snum:register_num,
+          spsd:register_psd
+        },
+        success: res => {
+          console.log(res);
+          wx:wx.navigateTo({
+            url: '../student_index/student_index?snum='+register_num,
+          })
+        },
+        fail: res => {
+          console.log(err)
+        }
+      })
+    }
+   
+
+    
+  },
+
+
+  //登录表单提交
   formSubmit:function(e){
     let{snum,spsd}=e.detail.value;
     console.log("sssss",snum,spsd)
@@ -24,11 +69,11 @@ Page({
     db.collection('s_info').where({
         snum:this.data.snum
     }).get({
-    // data 传入需要局部更新的数据
-    // data: {
-    //   // 表示将 done 字段置为 true
-    //   done: true
-    // },
+      // data 传入需要局部更新的数据
+      // data: {
+      //   // 表示将 done 字段置为 true
+      //   done: true
+      // },
       success(res) {
         console.log("res.data",res.data)
         // if (! res.data)
