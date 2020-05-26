@@ -1,0 +1,15 @@
+<!--pages/student_login/student_login.wxml-->
+<text>pages/student_login/student_login.wxml</text>
+<form hidden="{{hiddenmodalput1}}" bindsubmit="formSubmit" bindreset="formReset"  title="登录" >
+  <input class='inputinfo' type="text" placeholder="学号" name='snum' value="{{snum}}"/>
+  <input class="inputinfo" type="text" placeholder="密码" name='spsd' value="{{spsd}}" />
+  <button form-type="submit">登录</button>
+  <button form-type="reset">重置</button>
+</form>
+
+<form bindreset="" bindsubmit="" title=''>
+<input type="text" placeholder="" name='register_name'/>
+<input type="text" placeholder="" name='register_psd'/>
+<button form-type="submit">注册</button>
+<button form-type="reset">重置</button>
+</form>

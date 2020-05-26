@@ -1,0 +1,14 @@
+<!--pages/teacher_index/teacher_index.wxml-->
+<text>pages/teacher_index/teacher_index.wxml</text>
+<view>
+  <text>现有课程</text>
+  <view wx:for="{{classes}}">
+    {{item.cname}} {{item.ccredit}}
+  </view>
+</view>
+<view>
+<form bindsubmit="addclass" bindreset="resetaddclass" title='添加课程'>
+
+
+</form>
+</view>
