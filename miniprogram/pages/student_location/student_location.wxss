@@ -1,0 +1,12 @@
+/* pages/student_location/student_location.wxss */
+.location_txt{
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.f100_txt{
+  margin-left: 20px;
+  color: gray;
+}

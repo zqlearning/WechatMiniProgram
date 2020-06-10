@@ -1,0 +1,8 @@
+<!--pages/addclass/addclass.wxml-->
+<text>pages/addclass/addclass.wxml</text>
+<form bindreset="formReset" bindsubmit="addclassfunc" title='添加课程'>
+<text>课程名</text><input type="text" placeholder="课程名" name='cname_add'/>
+<text>学分</text><input type='text' placeholder="学分" name='ccredit_add'/>
+<button form-type="submit">创建课程</button>
+<button form-type="reset">重置</button>
+</form>

@@ -1,0 +1,8 @@
+<!--pages/classaddstudent/classaddstudent.wxml-->
+<text>pages/classaddstudent/classaddstudent.wxml</text>
+<form bindreset="formReset" bindsubmit="classaddstudentfunc" title='添加学生'>
+<text>姓名</text><input type="text" placeholder="姓名" name='sname_add'/>
+<text>学号</text><input type='text' placeholder="学号" name='snum_add'/>
+<button form-type="submit">添加学生</button>
+<button form-type="reset">重置</button>
+</form>
