@@ -1,6 +1,6 @@
-{"_id":"4c5846c75ed608570029f3af269bf42c","ccredit":"3","cname":"英语课","is_signing":false}
-{"_id":"4c5846c75ed608700029f50a6db233ae","ccredit":"2","cname":"图像处理","is_signing":false}
-{"_id":"4c5846c75edb3912005099f97930080d","_openid":"omKOg4lxORrk7TIWoYB81kK2DOnM","cname":"自然辨证法","ccredit":"1","is_signing":false}
-{"_id":"989f4e215ec76e2c000d88521283f87d","cname":"算法分析","ccredit":"2","is_signing":false}
-{"_id":"baada3ac5ed6083a0031ee581dcd9aed","ccredit":"3","cname":"人工智能","is_signing":false}
-{"_id":"e1422f825ec76e48000ca6ba5691e6e0","ccredit":"4","cname":"software","is_signing":false}
+{"_id":"4c5846c75ed608570029f3af269bf42c","ccredit":"3","cname":"英语课","is_signing":false,"longitude":"120.38511657","latitude":"30.309064865"}
+{"_id":"4c5846c75ed608700029f50a6db233ae","ccredit":"2","cname":"图像处理","is_signing":false,"longitude":"","latitude":""}
+{"_id":"4c5846c75edb3912005099f97930080d","_openid":"omKOg4lxORrk7TIWoYB81kK2DOnM","cname":"自然辨证法","ccredit":"1","is_signing":false,"longitude":"","latitude":""}
+{"_id":"989f4e215ec76e2c000d88521283f87d","cname":"算法分析","ccredit":"2","is_signing":false,"longitude":"","latitude":""}
+{"_id":"baada3ac5ed6083a0031ee581dcd9aed","ccredit":"3","cname":"人工智能","is_signing":false,"longitude":"","latitude":""}
+{"_id":"e1422f825ec76e48000ca6ba5691e6e0","ccredit":"4","cname":"software","is_signing":false,"longitude":"","latitude":""}

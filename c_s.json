@@ -2,6 +2,6 @@
 {"_id":"38d78ca75edb7c300058539823dd64d4","cname":"图像处理","sname":"wang","snum":"456789","is_signed":false,"_openid":"omKOg4lxORrk7TIWoYB81kK2DOnM"}
 {"_id":"54bac78c5ec76f04000f014457eb36d3","snum":"456789","cname":"software","is_signed":false,"sname":"wang"}
 {"_id":"75777da85edb3d86004bdaa51c2aec8f","cname":"算法分析","sname":"wang","snum":"456789","is_signed":false,"_openid":"omKOg4lxORrk7TIWoYB81kK2DOnM"}
-{"_id":"baada3ac5ed61bc20032d04b03457dfb","cname":"人工智能","snum":"123456","is_signed":false,"sname":"Jet"}
+{"_id":"baada3ac5ed61bc20032d04b03457dfb","cname":"人工智能","snum":"123456","is_signed":true,"sname":"Jet"}
 {"_id":"d721728a5ec77296000cf5e83573a1fa","cname":"英语课","snum":"123456","is_signed":false,"sname":"Jet"}
-{"_id":"f2a60d815ed61be2002b5f3f00f3d21d","snum":"123456","cname":"算法分析","is_signed":false,"sname":"Jet"}
+{"_id":"f2a60d815ed61be2002b5f3f00f3d21d","snum":"123456","cname":"算法分析","is_signed":true,"sname":"Jet"}
