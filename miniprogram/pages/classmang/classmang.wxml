@@ -1,0 +1,9 @@
+<!--pages/classmang/classmang.wxml-->
+<text>pages/classmang/classmang.wxml</text>
+<text>所有课程</text>
+<text>课程名     学分</text>
+<view wx:for="{{allclasslist}}">
+  <navigator url="../whichclass/whichclass?classname={{item.cname}}">
+    {{item.cname}} {{item.ccredit}}  <button bindtap="jump2classstudents">查看改该课学生名单</button>
+  </navigator>
+  </view>

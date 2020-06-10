@@ -1,0 +1,16 @@
+/* pages/setcheck/setcheck.wxss */
+.button-sp-area button{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  border: solid 1px;
+}
+.button-sp-area{
+  margin: 0 auto;
+  width: 60%;
+}
+.set{
+  font-size: 35rpx;
+  font-style: inherit;
+  font-weight: bold;
+  text-align: center;
+}

@@ -1,0 +1,10 @@
+<!--pages/student_lesson/student_lesson.wxml-->
+<view style='display:{{viewhidden1}};'>
+	<!-- <view class='content_item' wx:for="{{classlist}}" wx:key="key">
+    {{index}}:{{item.cname}}
+    <template is="msgItem" data="{{...item}}" />
+  </view> -->
+	<view wx:for="{{classlist}}">
+		{{item.cname}}
+	</view>
+</view>
