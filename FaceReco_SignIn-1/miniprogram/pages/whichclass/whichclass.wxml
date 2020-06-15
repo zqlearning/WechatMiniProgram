@@ -1,0 +1,17 @@
+<!--pages/whichclass/whichclass.wxml-->
+<text>pages/whichclass/whichclass.wxml</text>
+<text>
+{{classname}}
+</text>
+<view wx:for="{{studentlist}}">
+{{item.snum}} {{item.sname}}
+</view>
+<!-- <view wx:for="{{studentlist_name}}">
+{{item.sname}} -->
+<!-- </view> -->
+<navigator url="../classaddstudent/classaddstudent?classname={{classname}}">
+  <button>添加学生</button>
+</navigator>
+<navigator url="../coursecheckin/coursecheckin?classname={{classname}}">
+  <button>发布签到</button>
+</navigator>

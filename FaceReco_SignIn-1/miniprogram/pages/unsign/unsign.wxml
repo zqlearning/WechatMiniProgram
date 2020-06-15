@@ -1,0 +1,21 @@
+<!--pages/unsign/unsign.wxml-->
+<text>当前还未签到的学生名单</text>
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">姓名</view>
+    <view class="th">学号</view>
+    <view class="th">手机号</view>
+  </view>
+  <block wx:for="{{sinfo}}">
+       <view class="tr" wx:if="{{index % 2 == 0}}">
+       <view class="td">{{item.sname}}</view>
+       <view class="td">{{item.snum}}</view>
+       <view class="td">{{item.phone}}</view>
+       </view>
+       <view class="tr" wx:else>
+       <view class="td">{{item.sname}}</view>
+       <view class="td">{{item.snum}}</view>
+       <view class="td">{{item.phone}}</view>
+       </view>
+  </block>
+</view>

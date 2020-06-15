@@ -1,0 +1,7 @@
+/* pages/student_login/student_login.wxss */
+
+.type_text{
+  display: flex;
+  justify-content: center;
+  color: #000;
+}

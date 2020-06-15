@@ -1,0 +1,67 @@
+<!--pages/admin/admin.wxml-->
+<view class="button-sp-area">
+<!-- <text>课程名     学分</text> -->
+<view class="table">
+  <text>所有课程</text>
+  <view class="tr bg-w" style="background-color:#00b26a">
+    <view class="th" style="background-color:#00b26a">课程名</view>
+    <view class="th" style="background-color:#00b26a">学分</view>
+  </view>
+  
+  <view wx:for="{{allclasslist}}">
+    <!-- <navigator url="../whichclass/whichclass?classname={{item.cname}}">
+        {{item.cname}}{{item.ccredit}}
+    </navigator> -->
+    
+    <view class="tr" wx:if="{{index % 2 == 0}}">
+     <view class="td"><navigator url="../whichclass/whichclass?classname={{item.cname}}">{{item.cname}}</navigator></view>
+     <view class="td"><navigator url="../whichclass/whichclass?classname={{item.cname}}">{{item.ccredit}}</navigator></view>
+    </view>
+    <view class="tr" wx:if="{{index % 2 != 0}}">
+     <view class="td"><navigator url="../whichclass/whichclass?classname={{item.cname}}">{{item.cname}}</navigator></view>
+     <view class="td"><navigator url="../whichclass/whichclass?classname={{item.cname}}">{{item.ccredit}}</navigator></view>
+    </view>
+  </view>
+</view>
+
+
+    <navigator url='../addclass/addclass'>
+       <button>创建课程</button>
+    </navigator>
+    <!-- <button bindtap="set">设置签到</button>
+    <button>签到统计</button> -->
+</view>
+<view class="button-sp-area">
+    <button class="btn" bindtap="btn">刷新</button>
+</view>
+
+<!-- <view class="table">
+    <text>当前课程已经签到的学生</text>
+    <view class="hr"></view>
+    <text decode="{{true}}">&ensp;&ensp;签到学生&ensp;&ensp;&ensp;签到时间&ensp;&ensp;&ensp;已签到人数</text> 
+    <text decode="{{true}}">\n张三&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;10：00&ensp;&ensp;&ensp;&ensp;&ensp;1/47</text> 
+    <text decode="{{true}}">\n李四&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;10：01&ensp;&ensp;&ensp;&ensp;&ensp;2/47</text> 
+     <text decode="{{true}}">\n王五&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;10：01&ensp;&ensp;&ensp;&ensp;&ensp;3/47</text> 
+</view> -->
+<text>当前已签到的学生名单</text>
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">姓名</view>
+    <view class="th">学号</view>
+    <view class="th">手机号</view>
+  </view>
+  <block wx:for="{{sinfo}}">
+       <view class="tr" wx:if="{{index % 2 == 0}}">
+       <view class="td">{{item.sname}}</view>
+       <view class="td">{{item.snum}}</view>
+       <view class="td">{{item.phone}}</view>
+       </view>
+       <view class="tr" wx:else>
+       <view class="td">{{item.sname}}</view>
+       <view class="td">{{item.snum}}</view>
+       <view class="td">{{item.phone}}</view>
+       </view>
+  </block>
+</view>
+<button bindtap="unsign">未签到名单</button>
+

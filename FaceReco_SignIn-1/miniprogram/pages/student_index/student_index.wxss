@@ -1,0 +1,53 @@
+/* pages/student_index/student_index.wxss */
+.signin_entrance{
+    width: 690rpx;
+    height: 250rpx;
+    display: flex;   
+    position: relative;/*父元素位置要设置为相对*/
+    border: 4rpx solid black;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .signin_entrance .signin_entrance_countdown{
+    width: 590rpx;
+    height: 50rpx;
+    display: flex;
+    border: 4rpx solid black;
+    margin-left: auto;  /* 块元素居中 */
+    margin-right: auto;
+    position: relative;/*父元素位置要设置为相对*/
+    line-height: 50rpx;
+  }
+
+  .signin_entrance_countdown .countdown_course{
+    position: absolute; /* 要约束所在位置的子元素的位置要设置成绝对 */
+    left: 0; /* 靠左调节 */
+  }
+
+  .signin_entrance_countdown .countdown_count{
+    position: absolute; /* 要约束所在位置的子元素的位置要设置成绝对 */
+    right: 0; /* 靠右调节 */
+  }
+
+  .signin_entrance_countdown_info{
+    width: 590rpx;
+    height: 50rpx;
+    display: flex;
+    margin-left: auto;  /* 块元素居中 */
+    margin-right: auto;
+    position: relative;/*父元素位置要设置为相对*/
+    line-height: 50rpx;
+  }
+
+  .signin_entrance_countdown_info .countdown_course_info{
+    position: absolute; /* 要约束所在位置的子元素的位置要设置成绝对 */
+    left: 0; /* 靠左调节 */
+  }
+
+  .signin_entrance_countdown_info .countdown_count_info{
+    position: absolute; /* 要约束所在位置的子元素的位置要设置成绝对 */
+    right: 0; /* 靠右调节 */
+  }

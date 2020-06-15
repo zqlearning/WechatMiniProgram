@@ -1,0 +1,16 @@
+<!--pages/student_index/student_index.wxml-->
+<view>
+  <view>姓名: {{sname}}</view>
+  <view>学号：{{snum}}</view>
+  <view wx:if="{{sbphoto == true}}">照片：已上传照片</view>
+  <view wx:else="{{sbphoto == false}}">照片：请先上传照片</view>
+  <button bindtap="uploadimage">上传照片</button>
+</view>
+
+<view style='display:{{viewhidden1}};'>
+
+  <view class='addlesson' >
+    <text style='background: {{bgcolor1}};'>课程签到</text>
+    <button style='background: {{bgcolor2}};' bindtap='mine'>我的课程</button>
+  </view>
+</view>

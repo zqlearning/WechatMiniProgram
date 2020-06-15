@@ -1,0 +1,56 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/unsign/unsign",
+    "pages/singsuccess/signsuccess",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room",
+    "pages/index2/index2",
+    "pages/myinfo/myinfo",
+    "pages/student_FaceReco/student_FaceReco",
+    "pages/student_index/student_index",
+    "pages/student_login/student_login",
+    "pages/teacher_index/teacher_index",
+    "pages/student_info/student_info",
+    "pages/student_location/student_location",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/admin/admin",
+    "pages/register_success/register_success",
+    "pages/setcheck/setcheck",
+    "pages/classmang/classmang",
+    "pages/whichclass/whichclass",
+    "pages/addclass/addclass",
+    "pages/classaddstudent/classaddstudent",
+    "pages/coursecheckin/coursecheckin",
+    "pages/student_register/student_register",
+    "pages/student_lesson/student_lesson"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序的位置接口"
+    }
+    
+  }
+ 
+}

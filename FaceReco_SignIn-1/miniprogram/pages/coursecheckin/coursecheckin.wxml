@@ -1,0 +1,8 @@
+<!--pages/coursecheckin/coursecheckin.wxml-->
+ <map longitude="{{jd}}" latitude="{{wd}}"  style="width: 100%; height: 800rpx;"  wx:for-index="key" show-location></map>
+<view><text>当前位置经度:{{jd}}\n</text></view>
+<view><text>当前位置纬度:{{wd}}</text></view>
+<view>设置签到时间：<text style='color:red'>{{countDownNum}}</text>秒</view>
+<navigator url="../singsuccess/signsuccess?classname={{classname}}&jd={{jd}}&wd={{wd}}">
+  <button bindtap="checkin">发布签到</button>
+</navigator>

@@ -1,0 +1,10 @@
+<view class="button-sp-area">
+    <button bindtap="modalcnt">选择课程</button>
+    <button bindtap="modalinput">设置时间</button>
+       <modal hidden="{{hiddenmodalput}}" title="请设置时间" confirm-text="提交" cancel-text="重置" bindcancel="cancel" bindconfirm="confirm">  
+       <input type='text'placeholder="30分钟" auto-focus/>  
+       </modal>  
+    <button bindtap="showok">设置</button>
+    <button bindtap="return">取消</button>
+</view>
+<text class="set">签到设置</text>
