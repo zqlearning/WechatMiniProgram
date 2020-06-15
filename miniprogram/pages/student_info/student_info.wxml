@@ -1,8 +1,0 @@
-<!--pages/student_info/student_info.wxml-->
-<text>pages/student_info/student_info.wxml</text>
-<view>
-  <view>姓名: {{sname}}</view>
-  <view>学号：{{snum}}</view>
-  <view>照片：{{}}</view>
-  <button bindtap="reuploadimage">重新上传照片</button>
-</view>
