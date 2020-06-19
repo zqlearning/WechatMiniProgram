@@ -28,7 +28,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.8.1",
-	"appid": "wx31915dd564a65071",
+	"appid": "wx0457d05d9097ad37",
 	"projectname": "FaceReco_SignIn",
 	"miniprogramRoot": "miniprogram/",
 	"cloudfunctionRoot": "cloudfunctions/",
@@ -70,6 +70,19 @@
 					"name": "db guide",
 					"pathName": "pages/databaseGuide/databaseGuide",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/coursecheckin/coursecheckin",
+					"pathName": "pages/coursecheckin/coursecheckin",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/admin/admin",
+					"pathName": "pages/admin/admin",
+					"scene": null
 				}
 			]
 		}
