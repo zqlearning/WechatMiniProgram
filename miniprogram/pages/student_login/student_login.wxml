@@ -1,17 +1,9 @@
 <!--pages/student_login/student_login.wxml-->
-<text>pages/student_login/student_login.wxml</text>
+<text class="text">学生签到登入</text>
 <form hidden="{{hiddenmodalput1}}" bindsubmit="formSubmit" bindreset="formReset"  title="登录" >
-  <input class='inputinfo' type="text" placeholder="学号" name='snum' value="{{snum}}"/>
-  <input class="inputinfo" type="text" placeholder="密码" password="true" name='spsd' value="{{spsd}}" />
-  <button form-type="submit">登录</button>
-  <button form-type="reset">重置</button>
-</form>
-<view>还没做学号不重复验证</view>
-<form bindreset="formReset" bindsubmit="register" title='注册'>
-<input type="text" placeholder="姓名" name='register_name'/>
-<input type='text' placeholder="学号" name='register_num'/>
-<input type="text" placeholder="密码" password="true" name='register_psd'/>
-<input type='text' placeholder="重新确认密码" password="true" name='register_psd2'/>
-<button form-type="submit">注册</button>
-<button form-type="reset">重置</button>
+  <input class="weui-input" type="number" placeholder="学号" name='snum' value="{{snum}}"/>
+  <input class="weui-input" password type="text" placeholder="密码" name='spsd' value="{{spsd}}" />
+  <button type="primary" form-type="submit">登录</button>
+  <button type="primary" bindtap="jump2student_register">注册</button>
+  <button type="primary" form-type="reset">清除</button>
 </form>

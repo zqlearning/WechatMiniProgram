@@ -1,0 +1,11 @@
+<!--pages/student_register/student_register.wxml-->
+<text>学生注册</text>
+
+<form bindreset="formReset" bindsubmit="register" title='注册'>
+<input class="weui-input" type="text" placeholder="姓名" name='register_name'/>
+<input class="weui-input" type='number' placeholder="学号" name='register_num'/>
+<input class="weui-input" password type="text" placeholder="密码" name='register_psd'/>
+<input class="weui-input" password type='text' placeholder="重新确认密码" name='register_psd2'/>
+<button type="primary" form-type="submit">注册</button>
+<button type="primary" form-type="reset">重置</button>
+</form>

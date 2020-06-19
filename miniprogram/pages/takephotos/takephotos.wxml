@@ -1,0 +1,13 @@
+<!--pages/takephotos/takephotos.wxml-->
+<view class="container">
+  <view class="page__hd">
+    <text class="page__title">上传照片</text>
+  </view>
+	<view class="page-body">
+		<view class="page-section page-section-gap">
+			<image mode="aspectFit" src="{{image}}">
+			</image>
+			<button type="primary" bindtap="getphoto">{{btn_name}}</button>
+		</view>
+	</view>
+</view>
