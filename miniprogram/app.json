@@ -1,6 +1,9 @@
 {
   "pages": [
+    
     "pages/index/index",
+    "pages/unsign/unsign",
+    "pages/signsuccess/signsuccess",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",
@@ -32,13 +35,15 @@
     "pages/classaddstudent/classaddstudent",
     "pages/coursecheckin/coursecheckin",
     "pages/student_register/student_register",
-    "pages/student_lesson/student_lesson"
+    "pages/student_lesson/student_lesson",
+    "pages/facerecognize/facerecognize",
+    "pages/takephotos/takephotos"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTitleText": "首页",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
@@ -47,5 +52,7 @@
     "scope.userLocation": {
       "desc": "你的位置信息将用于小程序的位置接口"
     }
+    
   }
+ 
 }

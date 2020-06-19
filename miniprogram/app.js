@@ -22,6 +22,9 @@ App({
       })
     }
     
-    this.globalData = {}
+    this.globalData = {
+      // wd:'',
+      // jd:''
+    }
   }
 })
