@@ -1,0 +1,4 @@
+<!--pages/singsuccess/signsuccess.wxml-->
+<navigator url="../admin/admin">
+<text>发布签到成功</text>
+</navigator>

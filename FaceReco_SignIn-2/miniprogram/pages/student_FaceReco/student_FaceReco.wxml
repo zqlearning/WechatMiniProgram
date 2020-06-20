@@ -1,0 +1,5 @@
+<!--pages//student_FaceReco/student_FaceReco.wxml-->
+<view>
+<button bindtap="correct_OR_wrong">人脸识别</button>
+</view>
+

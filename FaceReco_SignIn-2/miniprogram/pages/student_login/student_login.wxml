@@ -1,0 +1,9 @@
+<!--pages/student_login/student_login.wxml-->
+<text class="text">学生签到登入</text>
+<form hidden="{{hiddenmodalput1}}" bindsubmit="formSubmit" bindreset="formReset"  title="登录" >
+  <input class='inputinfo' type="text" placeholder="学号" name='snum' value="{{snum}}"/>
+  <input class="inputinfo" type="text" placeholder="密码" password="true" name='spsd' value="{{spsd}}" />
+  <button form-type="submit">登录</button>
+  <button bindtap="jump2student_register">注册</button>
+  <button form-type="reset">清除</button>
+</form>

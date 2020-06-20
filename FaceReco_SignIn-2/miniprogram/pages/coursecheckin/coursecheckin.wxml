@@ -1,0 +1,18 @@
+<!--pages/coursecheckin/coursecheckin.wxml-->
+ <map longitude="{{jd}}" latitude="{{wd}}"  style="width: 100%; height: 800rpx;"  wx:for-index="key" show-location></map>
+<view><text>当前位置经度:{{jd}}\n</text></view>
+<view><text>当前位置纬度:{{wd}}</text></view>
+<view>签到时间：<text style='color:red'>{{countDownNum}}</text>分钟</view>
+<!-- <view>设置签到时间：<input placeholder="请输入签到时间："></input><text>分钟</text></view> -->
+<!-- <view>倒计时：{{num}}</view> -->
+<view class='select_box'>
+    <view class='select' catchtap='selectTap'>
+        <text class='select_text'>设置签到时间：{{selectData[index]}}分钟</text>  
+    </view>
+    <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+    </view>
+</view>
+<navigator url="../signsuccess/signsuccess?classname={{classname}}&jd={{jd}}&wd={{wd}}">
+  <button bindtap="checkin" class="sign">发布签到</button>
+</navigator>
