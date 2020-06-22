@@ -1,44 +1,35 @@
 <!--pages/student_index/student_index.wxml-->
-<text>pages/student_index/student_index.wxml</text>
-<!--pages/student_index/student_index.wxml-->
-<template name="msgItem">
-  <view class='lesson' bindtap='addlesson' data-id='{{courseID}}' data-lesson='{{courseName}}'data-class='{{ofClass}}'data-stime='{{buildTime}}'>
-    <view class='mylesson'>
-      <text class='slesson'>{{courseName}}</text>
-      <text class='sclass'>{{ofClass}}</text>
-    </view>
-    <view class='setTime'>
-      <text>{{buildTime}}</text>
-    </view>
-  </view>
-</template>
-<template name="tmsgItem">
-  <view class='lesson' bindtap='chooselesson' bindlongpress='deletelesson' data-id='{{courseID}}' data-lesson='{{courseName}}'data-class='{{ofClass}}'data-stime='{{buildTime}}'>
-    <view class='mylesson'>
-      <text class='slesson'>{{courseName}}</text>
-      <text class='sclass'>{{ofClass}}</text>
-    </view>
-    <view class='setTime'>
-      <text>{{buildTime}}</text>
-    </view>
-  </view>
-</template>
+<view>
+  <view>姓名: {{sname}}</view>
+  <view>学号：{{snum}}</view>
+  <view wx:if="{{sbphoto == true}}">照片：已上传照片</view>
+  <view wx:else="{{sbphoto == false}}">照片：请先上传照片</view>
+  <button type="primary" bindtap="uploadimage">上传照片</button>
+</view>
 
 <view style='display:{{viewhidden1}};'>
 
   <view class='addlesson' >
-    <button style='background: {{bgcolor1}};' bindtap='all'>全部课程</button>
-    <button style='background: {{bgcolor2}};' bindtap='mine'>我的课程</button>
-  </view>
-  <!-- <view class='content_item' wx:for="{{classlist}}" wx:key="key">
-    {{index}}:{{item.cname}}
-    <template is="msgItem" data="{{...item}}" />
-  </view> -->
-  <view wx:for="{{classlist}}">
-  {{item.cname}}
+    <button style='background: {{bgcolor2}};' bindtap="student_myclass">我的课程</button>
   </view>
 </view>
-<view bindtap="jump2myinfo">我的信息</view>
+
+<view class = "signin_entrance" style="display:{{d1}};border-color:{{b_color}}">
+  <view class = "signin_entrance_title">
+    学生签到通知
+  </view>
+  
+  <view class="signin_entrance_countdown_info" >
+    <view class="countdown_course_info" >{{needsign_c}}</view>
+    <button class="signin_but" bindtap="jump2location">
+      <view>签到</view>
+    </button>
+  </view>
+</view>
+
+<view class="no_needsign_c" style="display:{{d2}}">
+  <view>您当前没有需要签到的课程</view>
+</view>
 
 
 <!-- <view style='display:{{viewhidden2}};'>
